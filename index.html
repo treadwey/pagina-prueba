@@ -19,8 +19,9 @@
                 <nav class="nav">
                     <a href="#inicio" class="nav-link">Inicio</a>
                     <a href="#servicios" class="nav-link">Servicios</a>
+                    <a href="#precios" class="nav-link">Precios</a>
                     <a href="#proceso" class="nav-link">Proceso</a>
-                    <a href="#contacto" class="nav-link">Contacto</a>
+                    <a href="#formulario" class="nav-link">Contacto</a>
                 </nav>
                 <button class="cta-button">
                     <i class="fas fa-phone"></i>
@@ -46,11 +47,11 @@
                         Te ayudo a conseguir el vehículo que necesitas al mejor precio, con total transparencia y seguridad.
                     </p>
                     <div class="hero-buttons">
-                        <button class="btn-primary">
+                        <button class="btn-primary" onclick="scrollToSection('formulario')">
                             <i class="fas fa-search"></i>
                             🔍 Buscar Mi Auto
                         </button>
-                        <button class="btn-secondary">
+                        <button class="btn-secondary" onclick="scrollToSection('proceso')">
                             <i class="fas fa-file-text"></i>
                             📋 Cómo Funciona
                         </button>
@@ -98,7 +99,7 @@
             </div>
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="service-icon blue">
+                    <div class="service-icon red">
                         <i class="fas fa-search"></i>
                     </div>
                     <h3 class="service-title">🔍 Búsqueda Especializada</h3>
@@ -143,6 +144,190 @@
         </div>
     </section>
 
+    <!-- Precios -->
+    <section id="precios" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nuestros Precios</h2>
+                <p class="section-description">💰 Planes transparentes y competitivos para todos los tipos de compra</p>
+            </div>
+            
+            <!-- Programa para Revendedores -->
+            <div class="pricing-category">
+                <h3 class="category-title">🏢 PROGRAMA PARA REVENDEDORES</h3>
+                <div class="pricing-grid">
+                    <div class="pricing-card featured">
+                        <div class="price-header">
+                            <div class="price-amount">$150</div>
+                            <div class="price-range">PARA COMPRAS HASTA</div>
+                            <div class="price-limit">$7,999</div>
+                        </div>
+                        <div class="price-features">
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>INCLUYE 10 REPORTES DE CARFAX</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Búsqueda especializada</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Representación en subastas</span>
+                            </div>
+                        </div>
+                        <button class="price-button" onclick="selectPlan('revendedor-basico')">Seleccionar Plan</button>
+                    </div>
+
+                    <div class="pricing-card">
+                        <div class="price-header">
+                            <div class="price-amount">$280</div>
+                            <div class="price-range">PARA COMPRAS ENTRE</div>
+                            <div class="price-limit">$8,000 Y $14,999</div>
+                        </div>
+                        <div class="price-features">
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>INCLUYE 15 REPORTES DE CARFAX</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Búsqueda especializada</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Representación en subastas</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Inspección detallada</span>
+                            </div>
+                        </div>
+                        <button class="price-button" onclick="selectPlan('revendedor-intermedio')">Seleccionar Plan</button>
+                    </div>
+
+                    <div class="pricing-card">
+                        <div class="price-header">
+                            <div class="price-amount">$359</div>
+                            <div class="price-range">PARA COMPRAS MAYORES</div>
+                            <div class="price-limit">$15,000</div>
+                        </div>
+                        <div class="price-features">
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>INCLUYE 20 REPORTES DE CARFAX</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Búsqueda especializada</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Representación en subastas</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Inspección completa</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Soporte prioritario</span>
+                            </div>
+                        </div>
+                        <button class="price-button" onclick="selectPlan('revendedor-premium')">Seleccionar Plan</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Compras Particulares -->
+            <div class="pricing-category">
+                <h3 class="category-title">👤 COMPRAS PARTICULARES</h3>
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <div class="price-header">
+                            <div class="price-amount">$199</div>
+                            <div class="price-range">PARA COMPRAS HASTA</div>
+                            <div class="price-limit">$7,999</div>
+                        </div>
+                        <div class="price-features">
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Búsqueda personalizada</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Representación en subastas</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Reporte de condición</span>
+                            </div>
+                        </div>
+                        <button class="price-button" onclick="selectPlan('particular-basico')">Seleccionar Plan</button>
+                    </div>
+
+                    <div class="pricing-card featured">
+                        <div class="price-header">
+                            <div class="price-amount">$359</div>
+                            <div class="price-range">PARA COMPRAS ENTRE</div>
+                            <div class="price-limit">$8,000 Y $14,999</div>
+                        </div>
+                        <div class="price-features">
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Búsqueda personalizada</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Representación en subastas</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Inspección detallada</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Gestión de documentos</span>
+                            </div>
+                        </div>
+                        <button class="price-button" onclick="selectPlan('particular-intermedio')">Seleccionar Plan</button>
+                    </div>
+
+                    <div class="pricing-card">
+                        <div class="price-header">
+                            <div class="price-amount">$499</div>
+                            <div class="price-range">PARA COMPRAS MAYORES</div>
+                            <div class="price-limit">$15,000</div>
+                        </div>
+                        <div class="price-features">
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Búsqueda personalizada</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Representación en subastas</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Inspección completa</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Gestión completa de documentos</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Soporte VIP</span>
+                            </div>
+                        </div>
+                        <button class="price-button" onclick="selectPlan('particular-premium')">Seleccionar Plan</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Proceso -->
     <section id="proceso" class="process">
         <div class="container">
@@ -175,54 +360,155 @@
         </div>
     </section>
 
-    <!-- Beneficios -->
-    <section class="benefits">
+    <!-- Formulario de Contacto -->
+    <section id="formulario" class="contact-form">
         <div class="container">
-            <div class="benefits-content">
-                <div class="benefits-text">
-                    <h2 class="section-title">¿Por Qué Elegir Mis Servicios?</h2>
-                    <div class="benefits-list">
-                        <div class="benefit-item">
-                            <div class="benefit-icon green">
-                                <i class="fas fa-check-circle"></i>
-                            </div>
-                            <div class="benefit-content">
-                                <h3 class="benefit-title">✨ Experiencia Comprobada</h3>
-                                <p class="benefit-description">Más de 5 años especializándome en subastas de vehículos con cientos de transacciones exitosas</p>
-                            </div>
+            <div class="section-header">
+                <h2 class="section-title">¡Comencemos a Buscar Tu Auto Ideal!</h2>
+                <p class="section-description">📝 Completa el formulario y te contactaremos en menos de 24 horas</p>
+            </div>
+            
+            <div class="form-container">
+                <form id="contactForm" class="contact-form-grid">
+                    <div class="form-group">
+                        <label for="nombre">Nombre Completo *</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                        <span class="error-message" id="nombre-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico *</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error-message" id="email-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefono">Teléfono *</label>
+                        <input type="tel" id="telefono" name="telefono" required>
+                        <span class="error-message" id="telefono-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="ciudad">Ciudad *</label>
+                        <input type="text" id="ciudad" name="ciudad" required>
+                        <span class="error-message" id="ciudad-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tipoCliente">Tipo de Cliente *</label>
+                        <select id="tipoCliente" name="tipoCliente" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="particular">Compra Particular</option>
+                            <option value="revendedor">Revendedor</option>
+                        </select>
+                        <span class="error-message" id="tipoCliente-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="presupuesto">Presupuesto Aproximado *</label>
+                        <select id="presupuesto" name="presupuesto" required>
+                            <option value="">Selecciona tu rango</option>
+                            <option value="hasta-7999">Hasta $7,999</option>
+                            <option value="8000-14999">$8,000 - $14,999</option>
+                            <option value="15000-mas">$15,000 o más</option>
+                        </select>
+                        <span class="error-message" id="presupuesto-error"></span>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="tipoVehiculo">Tipo de Vehículo Buscado *</label>
+                        <input type="text" id="tipoVehiculo" name="tipoVehiculo" placeholder="Ej: Sedán, SUV, Pickup, etc." required>
+                        <span class="error-message" id="tipoVehiculo-error"></span>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="marca">Marca Preferida</label>
+                        <input type="text" id="marca" name="marca" placeholder="Ej: Toyota, Honda, Ford, etc.">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="anioMin">Año Mínimo</label>
+                        <select id="anioMin" name="anioMin">
+                            <option value="">Cualquier año</option>
+                            <option value="2020">2020 o más nuevo</option>
+                            <option value="2018">2018 o más nuevo</option>
+                            <option value="2015">2015 o más nuevo</option>
+                            <option value="2010">2010 o más nuevo</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="urgencia">¿Qué tan urgente es tu compra?</label>
+                        <select id="urgencia" name="urgencia">
+                            <option value="no-urgente">No es urgente</option>
+                            <option value="1-mes">Dentro de 1 mes</option>
+                            <option value="2-semanas">Dentro de 2 semanas</option>
+                            <option value="inmediato">Lo más pronto posible</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="fechaCita">📅 Fecha Preferida para Cita con Asesor *</label>
+                        <div class="calendar-container">
+                            <input type="date" id="fechaCita" name="fechaCita" class="calendar-input" required>
+                            <i class="fas fa-calendar-alt calendar-icon"></i>
                         </div>
-                        <div class="benefit-item">
-                            <div class="benefit-icon blue">
-                                <i class="fas fa-shield-alt"></i>
-                            </div>
-                            <div class="benefit-content">
-                                <h3 class="benefit-title">🔒 Transparencia Total</h3>
-                                <p class="benefit-description">Te mantengo informado en cada paso del proceso con reportes detallados y comunicación constante</p>
-                            </div>
+                        <span class="error-message" id="fechaCita-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="horaCita">🕐 Hora Preferida para Cita *</label>
+                        <select id="horaCita" name="horaCita" required>
+                            <option value="">Selecciona una hora</option>
+                            <option value="09:00">9:00 AM</option>
+                            <option value="10:00">10:00 AM</option>
+                            <option value="11:00">11:00 AM</option>
+                            <option value="12:00">12:00 PM</option>
+                            <option value="13:00">1:00 PM</option>
+                            <option value="14:00">2:00 PM</option>
+                            <option value="15:00">3:00 PM</option>
+                            <option value="16:00">4:00 PM</option>
+                            <option value="17:00">5:00 PM</option>
+                        </select>
+                        <span class="error-message" id="horaCita-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tipoCita">Tipo de Cita Preferida</label>
+                        <select id="tipoCita" name="tipoCita">
+                            <option value="presencial">Presencial</option>
+                            <option value="videollamada">Videollamada</option>
+                            <option value="telefonica">Llamada telefónica</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="comentarios">Comentarios Adicionales</label>
+                        <textarea id="comentarios" name="comentarios" rows="4" placeholder="Cuéntanos más detalles sobre lo que buscas..."></textarea>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="terminos" name="terminos" required>
+                            <label for="terminos">Acepto los términos y condiciones y autorizo el tratamiento de mis datos personales *</label>
                         </div>
-                        <div class="benefit-item">
-                            <div class="benefit-icon purple">
-                                <i class="fas fa-chart-line"></i>
-                            </div>
-                            <div class="benefit-content">
-                                <h3 class="benefit-title">💎 Ahorro Garantizado</h3>
-                                <p class="benefit-description">Acceso a precios de subasta que pueden ser hasta 30% menores que el mercado tradicional</p>
-                            </div>
-                        </div>
-                        <div class="benefit-item">
-                            <div class="benefit-icon orange">
-                                <i class="fas fa-bolt"></i>
-                            </div>
-                            <div class="benefit-content">
-                                <h3 class="benefit-title">⚡ Proceso Rápido</h3>
-                                <p class="benefit-description">Desde la consulta inicial hasta la entrega del vehículo en tiempo récord</p>
-                            </div>
+                        <span class="error-message" id="terminos-error"></span>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">Deseo recibir información sobre ofertas especiales y nuevos servicios</label>
                         </div>
                     </div>
-                </div>
-                <div class="benefits-image">
-                    <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Beneficios del servicio">
-                </div>
+
+                    <div class="form-actions full-width">
+                        <button type="submit" class="submit-button">
+                            <i class="fas fa-paper-plane"></i>
+                            🚀 Enviar Solicitud
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
     </section>
@@ -246,7 +532,7 @@
                         "⭐ Excelente servicio. Me ayudó a conseguir una camioneta en perfectas condiciones a un precio increíble. Muy profesional y transparente en todo el proceso."
                     </p>
                     <div class="testimonial-author">
-                        <div class="author-avatar blue">MG</div>
+                        <div class="author-avatar red">MG</div>
                         <div class="author-info">
                             <div class="author-name">María González</div>
                             <div class="author-role">Cliente Satisfecha</div>
@@ -303,11 +589,11 @@
                 <h2 class="cta-title">🚗 ¿Listo Para Encontrar Tu Auto Ideal?</h2>
                 <p class="cta-description">⚡ Contáctame hoy mismo y comencemos la búsqueda de tu próximo vehículo en las mejores subastas</p>
                 <div class="cta-buttons">
-                    <button class="btn-cta-primary">
+                    <button class="btn-cta-primary" onclick="scrollToSection('formulario')">
                         <i class="fas fa-phone"></i>
                         📞 Llamar Ahora
                     </button>
-                    <button class="btn-cta-secondary">
+                    <button class="btn-cta-secondary" onclick="scrollToSection('formulario')">
                         <i class="fas fa-envelope"></i>
                         ✉️ Enviar Mensaje
                     </button>
@@ -317,7 +603,7 @@
     </section>
 
     <!-- Footer -->
-    <footer id="contacto" class="footer">
+    <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-main">
@@ -363,8 +649,9 @@
                     <ul class="footer-list">
                         <li><a href="#inicio">🏠 Inicio</a></li>
                         <li><a href="#servicios">⚙️ Servicios</a></li>
+                        <li><a href="#precios">💰 Precios</a></li>
                         <li><a href="#proceso">📋 Proceso</a></li>
-                        <li><a href="#contacto">📞 Contacto</a></li>
+                        <li><a href="#formulario">📞 Contacto</a></li>
                     </ul>
                 </div>
             </div>
@@ -373,5 +660,25 @@
             </div>
         </div>
     </footer>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <i class="fas fa-check-circle"></i>
+                <h3>¡Solicitud Enviada Exitosamente!</h3>
+            </div>
+            <div class="modal-body">
+                <p>Gracias por tu interés. Hemos recibido tu solicitud y nos pondremos en contacto contigo en menos de 24 horas.</p>
+                <p>Tu cita ha sido programada para el <strong id="citaFecha"></strong> a las <strong id="citaHora"></strong>.</p>
+                <p>Mientras tanto, puedes llamarnos al <strong>+1 (555) 123-4567</strong> si tienes alguna pregunta urgente.</p>
+            </div>
+            <div class="modal-footer">
+                <button onclick="closeModal()" class="modal-button">Cerrar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
